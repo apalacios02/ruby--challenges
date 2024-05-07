@@ -1,4 +1,4 @@
-# Author: [Your Name]
+# Author: Allan Palacios
 
 # Prompt the user to enter the subtotal
 print "Enter the subtotal amount: "
