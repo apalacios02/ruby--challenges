@@ -17,10 +17,12 @@ pst_amount = sub_total * PST_RATE
 grand_total = sub_total + gst_amount + pst_amount
 
 # Display the breakdown and grand total
+puts "Challenge 00 #1"
 puts "Subtotal: $%.2f" % sub_total
 puts "PST: $%.2f - %.0f%%" % [pst_amount, PST_RATE * 100]
 puts "GST: $%.2f - %.0f%%" % [gst_amount, GST_RATE * 100]
 puts "Grand Total: $%.2f" % grand_total
+puts "-------------------------"
 
 # 02------------------------------------------------------------------------------------
 # Store the dollar amount in a variable called "sub_total"
@@ -38,6 +40,7 @@ pst_amount1 = sub_total1 * PST_RATE1
 grand_total1 = sub_total1 + gst_amount1 + pst_amount1
 
 # Display the breakdown and grand total
+puts "Challenge 00 #2"
 puts "Subtotal: $%.2f" % sub_total1
 puts "PST: $%.2f - %.0f%%" % [pst_amount1, PST_RATE1 * 100]
 puts "GST: $%.2f - %.0f%%" % [gst_amount1, GST_RATE1 * 100]
@@ -46,15 +49,19 @@ puts "Grand Total: $%.2f" % grand_total1
 # Determine the appropriate message based on the grand total
 if grand_total1 <= 5.00
   puts "Pocket Change"
+  puts "-------------------------"
 elsif grand_total1 > 5.00 && grand_total1 < 20
   puts "Wallet Time"
+  puts "-------------------------"
 else
   puts "Charge It!"
+  puts "-------------------------"
 end
 
 # 03----------------------------------------------------------------------------------
 
 # Prompt the user to enter the subtotal
+puts "Challenge 00 #3"
 print "Enter the subtotal amount: "
 sub_total_input = gets.chomp
 
@@ -81,8 +88,11 @@ puts "Grand Total: $%.2f" % grand_total2
 # Determine the appropriate message based on the grand total
 if grand_total2 <= 5.00
   puts "Pocket Change"
+  puts "-------------------------"
 elsif grand_total2 > 5.00 && grand_total2 < 20
   puts "Wallet Time"
+  puts "-------------------------"
 else
   puts "Charge It!"
+  puts "-------------------------"
 end
